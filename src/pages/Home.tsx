@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from '../components/Slider'
 import WhatWeOffer from '../components/WhatWeOffer'
 import WhyChooseUs from '../components/WhyChooseUs'
+import Testimonials from '../components/Testimonials'
 
 const images = [
   {
@@ -38,6 +39,7 @@ const Home: React.FC = () => {
         <Slider images={images} />
         <WhatWeOffer />
         <WhyChooseUs />
+        <Testimonials />
       </main>
     </div>
   )
