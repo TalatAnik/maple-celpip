@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const menuItems = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'Our Team' },
-  { to: '/why-choose-us', label: 'Why Choose Us' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: '主页' },
+  { to: '/about', label: '我们的团队' },
+  { to: '/why-choose-us', label: '为什么选择我们' },
+  { to: '/contact', label: '联系我们' },
 ]
 
 const Navbar: React.FC = () => {

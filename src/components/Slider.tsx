@@ -62,7 +62,7 @@ const Slider: React.FC<SliderProps> = ({ images }) => {
                   </p>
                   <div className="flex gap-4 justify-start">
                     <button className="btn-primary">{image.cta}</button>
-                    <button className="btn-secondary">Learn More</button>
+                    <button className="btn-secondary">了解更多</button>
                   </div>
                 </div>
               </div>
