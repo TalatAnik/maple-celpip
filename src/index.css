@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "tailwindcss-motion";
@@ -31,7 +32,7 @@
 }
 
 @theme {
-  --font-karla: "karla", sans-serif;
+  --font-karla: "karla", "Noto Sans SC", sans-serif;
 }
 
 body {

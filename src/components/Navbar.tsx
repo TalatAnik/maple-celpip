@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
       <nav className="flex items-center justify-between w-full h-16 px-2">
         {/* Logo/Brand */}
         <div className="flex-shrink-0">
-          <Link to="/" className="text-xl font-bold text-[var(--color-primary)]">
+          <Link to="/" className="text-xl font-light text-[var(--color-primary)]">
             Maple CELPIP
           </Link>
         </div>
