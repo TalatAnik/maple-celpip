@@ -51,6 +51,14 @@ body {
 #root {
   min-height: 100dvh;
   max-width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+  padding-bottom: 2.5rem; /* Adjust this value to match the footer height */
 }
 
 :root {
@@ -89,4 +97,24 @@ a:active {
   background-color: transparent;
   color: inherit;
   outline: none;
+}
+
+/* Ensure the body and html take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the main content grows to fill available space */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+  padding-bottom: 2.5rem; /* Adjust this value to match the footer height */
 }

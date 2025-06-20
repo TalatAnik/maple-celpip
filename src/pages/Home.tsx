@@ -32,12 +32,12 @@ const images = [
 
 const Home: React.FC = () => {
   return (
-    <main className="min-h-[60vh] bg-base-100 w-full">
-      <Slider images={images} />
-
-      {/* What We Offer Section */}
-      <WhatWeOffer />
-    </main>
+    <div className="flex flex-col min-h-100vh bg-white">
+      <main className="flex-grow">
+        <Slider images={images} />
+        <WhatWeOffer />
+      </main>
+    </div>
   )
 }
 
