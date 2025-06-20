@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from '../components/Slider'
 import WhatWeOffer from '../components/WhatWeOffer'
+import WhyChooseUs from '../components/WhyChooseUs'
 
 const images = [
   {
@@ -36,6 +37,7 @@ const Home: React.FC = () => {
       <main className="flex-grow">
         <Slider images={images} />
         <WhatWeOffer />
+        <WhyChooseUs />
       </main>
     </div>
   )
