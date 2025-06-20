@@ -2,3 +2,90 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "tailwindcss-motion";
+
+@plugin "daisyui/theme" {
+  name: "maple-theme";
+  default: true; /* This will make it the default theme */
+  prefersdark: false;
+  color-scheme: "light";
+
+  /* Define theme colors */
+  --color-primary: #956d51; /* Maple primary color */
+  --color-primary-content: #ffffff; /* Text color on primary backgrounds */
+  --color-secondary: #f59e42; /* Secondary color */
+  --color-secondary-content: #ffffff; /* Text color on secondary backgrounds */
+  --color-accent: #22d3ee; /* Accent color */
+  --color-accent-content: #ffffff; /* Text color on accent backgrounds */
+  --color-neutral: #1a202c; /* Neutral color */
+  --color-neutral-content: #f3f4f6; /* Text color on neutral backgrounds */
+  --color-base-100: #ffffff; /* Base background */
+  --color-base-200: #f3f4f6; /* Secondary background */
+  --color-base-content: #1a202c; /* Text color on base backgrounds */
+  --color-info: #38bdf8; /* Info color */
+  --color-success: #4ade80; /* Success color */
+  --color-warning: #facc15; /* Warning color */
+  --color-error: #ef4444; /* Error color */
+
+  /* Custom overlay color */
+  --color-overlay: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+@theme {
+  --font-karla: "karla", sans-serif;
+}
+
+body {
+  font-family: var(--font-karla);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-karla);
+}
+
+/* html {
+  scrollbar-gutter: stable;
+} */
+
+#root {
+  min-height: 100dvh;
+  max-width: 100dvw;
+}
+
+:root {
+  --sidebar-bg: #0b1832;
+  --sidebar-text: #fff;
+  --dashboard-bg: #fff;
+  --dashboard-text: #0b1832;
+  --dashboard-heading: #2563eb;
+  --dashboard-subtext: #64748b;
+}
+
+@layer utilities {
+  .center-content {
+    @apply flex items-center justify-center;
+  }
+}
+
+/* Primary Button */
+.btn-primary {
+  @apply bg-[var(--color-primary)] text-white font-bold uppercase px-6 py-2 rounded-md transition-all duration-200;
+}
+.btn-primary:hover {
+  background-color: #7f5c45; /* Darker shade of the primary color */
+}
+
+/* Secondary Button */
+.btn-secondary {
+  @apply bg-white text-black font-bold uppercase border border-[var(--color-primary)] px-6 py-2 rounded-md transition-all duration-200;
+}
+.btn-secondary:hover {
+  background-color: #f3f4f6; /* Light gray for hover effect */
+}
+
+/* Disable default :active styles for links */
+a:active {
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+}

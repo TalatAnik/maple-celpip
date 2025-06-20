@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const menuItems = [
@@ -12,11 +12,11 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="w-full bg-white sticky top-0 z-50 shadow text-black">
-      <nav className="flex items-center justify-between w-full px-4 h-16">
+    <header className="w-full bg-white sticky top-0 z-50 shadow text-black px-16">
+      <nav className="flex items-center justify-between w-full h-16 px-2">
         {/* Logo/Brand */}
         <div className="flex-shrink-0">
-          <Link to="/" className="text-xl font-bold text-primary">
+          <Link to="/" className="text-xl font-bold text-[var(--color-primary)]">
             Maple CELPIP
           </Link>
         </div>
@@ -26,8 +26,8 @@ const Navbar: React.FC = () => {
             <li key={item.to} className="relative">
               <Link
                 to={item.to}
-                className="!text-black font-medium px-2 py-1 transition-colors duration-200
-                  after:content-[''] after:block after:h-0.5 after:bg-maple-accent after:w-0 after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1
+                className="text-black font-medium uppercase px-2 py-1 transition-colors duration-200
+                  after:content-[''] after:block after:h-1 after:bg-[var(--color-primary)] after:w-0 after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-0.5
                   hover:after:w-full focus:after:w-full"
                 style={{
                   position: 'relative',
@@ -40,7 +40,8 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
         {/* Mobile Menu Button */}
-        <div className="md:hidden ml-auto">
+        <div className="md:hidden"
+        style={{ marginRight: '-70px', zIndex: 50 }}>
           <button
             className="btn btn-ghost text-black"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -66,7 +67,7 @@ const Navbar: React.FC = () => {
         style={{ willChange: 'transform' }}
       >
         <button
-          className="btn btn-ghost absolute top-4 right-4 text-black"
+          className="btn btn-ghost absolute top-4 right-0 text-black"
           onClick={() => setMenuOpen(false)}
           aria-label="Close menu"
         >
@@ -85,8 +86,8 @@ const Navbar: React.FC = () => {
             <li key={item.to} className="relative">
               <Link
                 to={item.to}
-                className="!text-black font-medium px-2 py-2 transition-colors duration-200
-                  after:content-[''] after:block after:h-0.5 after:bg-maple-accent after:w-0 after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1
+                className="!text-black font-medium uppercase px-2 py-2 transition-colors duration-200
+                  after:content-[''] after:block after:h-0.5 after:bg-[var(--color-primary)] after:w-0 after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1
                   hover:after:w-full focus:after:w-full"
                 style={{
                   position: 'relative',

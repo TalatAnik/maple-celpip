@@ -1,18 +1,38 @@
 import React from 'react'
+import Slider from '../components/Slider'
+
+const images = [
+  {
+    src: '/images/slider1.jpg',
+    title: '自信掌握CELPIP考试',
+    description:
+      '我们是多伦多为数不多的培训机构之一，由官方CELPIP考官直接授课，倡导“考官授课，高效通过”的价值主张。',
+    cta: '开始',
+  },
+  {
+    src: '/images/slider2.jpg',
+    title: '个性化学习',
+    description: '量身定制的策略帮助您成功。',
+    cta: '了解更多',
+  },
+  {
+    src: '/images/slider3.jpg',
+    title: '成功的证明',
+    description: '成千上万的学生实现了他们的梦想。',
+    cta: '立即加入',
+  },
+  {
+    src: '/images/slider4.jpg',
+    title: '通往成功的道路',
+    description: '让我们在每一步都为您提供指导。',
+    cta: '联系我们',
+  },
+]
 
 const Home: React.FC = () => {
   return (
     <main className="min-h-[60vh] bg-base-100 w-full">
-      <section className="max-w-3xl mx-auto p-8 rounded-xl shadow-lg bg-white dark:bg-base-200 mt-12">
-        <h1 className="text-4xl font-bold text-primary mb-4">Welcome to Maple CELPIP</h1>
-        <p className="text-lg text-neutral mb-6">
-          Your trusted partner for CELPIP preparation and success.
-        </p>
-        <div className="flex gap-4">
-          <button className="btn btn-primary">Get Started</button>
-          <button className="btn btn-secondary">Learn More</button>
-        </div>
-      </section>
+      <Slider images={images} />
     </main>
   )
 }

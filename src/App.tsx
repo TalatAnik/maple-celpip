@@ -13,7 +13,7 @@ function Store() {
 
 function App() {
   return (
-    <div data-theme="maple" className="min-h-screen bg-white">
+    <div data-theme="maple-theme" className="min-h-screen bg-white">
       <Router>
         <Navbar />
         <Routes>
