@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from '../components/Slider'
+import WhatWeOffer from '../components/WhatWeOffer'
 
 const images = [
   {
@@ -33,6 +34,9 @@ const Home: React.FC = () => {
   return (
     <main className="min-h-[60vh] bg-base-100 w-full">
       <Slider images={images} />
+
+      {/* What We Offer Section */}
+      <WhatWeOffer />
     </main>
   )
 }
