@@ -1,0 +1,46 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite build output
+dist/
+.vite/
+
+# TailwindCSS
+tailwind.config.js.backup
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swn
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Linting
+.eslintcache
+
+# Miscellaneous
+*.bak
+*.tmp
