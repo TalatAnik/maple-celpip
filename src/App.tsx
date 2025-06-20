@@ -31,7 +31,7 @@ function Contact() {
 function App() {
   return (
     <div data-theme="maple-theme" className="min-h-screen flex flex-col">
-      <Router>
+      <Router basename="/maple-celpip/">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

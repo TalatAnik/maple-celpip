@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://talatanik.github.io/maple-celpip/",
+  "homepage": "https://talatanik.github.io/maple-celpip",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
