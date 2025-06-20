@@ -4,11 +4,11 @@ import WhatWeOffer from '../components/WhatWeOffer'
 import WhyChooseUs from '../components/WhyChooseUs'
 import Testimonials from '../components/Testimonials'
 
-// Import images
-import slider1 from '../assets/images/slider1.jpg'
-import slider2 from '../assets/images/slider2.jpg'
-import slider3 from '../assets/images/slider3.jpg'
-import slider4 from '../assets/images/slider4.jpg'
+// Define image paths using import.meta.env.BASE_URL
+const slider1 = `${import.meta.env.BASE_URL}images/slider1.jpg`
+const slider2 = `${import.meta.env.BASE_URL}images/slider2.jpg`
+const slider3 = `${import.meta.env.BASE_URL}images/slider3.jpg`
+const slider4 = `${import.meta.env.BASE_URL}images/slider4.jpg`
 
 const images = [
   {

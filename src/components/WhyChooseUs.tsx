@@ -1,10 +1,9 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
 
-// Import image
-import whyChooseUsImage from '../assets/images/why-choose-us.jpg'
-
 const WhyChooseUs: React.FC = () => {
+  const imagePath = `${import.meta.env.BASE_URL}images/why-choose-us.jpg`
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-screen-lg mx-auto px-6">
@@ -18,7 +17,7 @@ const WhyChooseUs: React.FC = () => {
           {/* Left Column: Image */}
           <div className="flex-1 flex justify-center">
             <img
-              src={whyChooseUsImage}
+              src={imagePath}
               alt="Why Choose Us"
               className="w-3/4 md:w-2/3 rounded-lg shadow-md"
             />

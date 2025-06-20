@@ -1,26 +1,21 @@
 import React from 'react'
 
-// Import images
-import testimonial1 from '../assets/images/testimonial1.jpg'
-import testimonial2 from '../assets/images/testimonial2.jpg'
-import testimonial3 from '../assets/images/testimonial3.jpg'
-
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
       name: '张伟',
-      text: '“通过 Maple CELPIP 的课程，我成功通过了考试！老师非常专业，课程内容非常有帮助。课程中提供的模拟考试和详细的反馈让我清楚地知道自己的弱点，并且能够针对性地提高。”',
-      image: testimonial1,
+      text: '“通过 Maple CELPIP 的课程，我成功通过了考试！老师非常专业，课程内容非常有帮助。”',
+      image: `${import.meta.env.BASE_URL}images/testimonial1.jpg`,
     },
     {
       name: '李娜',
-      text: '“感谢 Maple CELPIP 的支持和指导！他们的个性化学习计划让我在短时间内取得了好成绩。老师们非常耐心，帮助我一步步提高语言能力。这里的学习氛围也非常好，让我充满信心。”',
-      image: testimonial2,
+      text: '“感谢 Maple CELPIP 的支持和指导！他们的个性化学习计划让我在短时间内取得了好成绩。”',
+      image: `${import.meta.env.BASE_URL}images/testimonial2.jpg`,
     },
     {
       name: '王强',
-      text: '“这里的学习资源非常丰富，老师也很耐心。我强烈推荐 Maple CELPIP 给所有需要通过考试的人。无论是课程内容还是课后练习，都非常贴近实际考试，帮助我快速掌握了考试技巧。”',
-      image: testimonial3,
+      text: '“这里的学习资源非常丰富，老师也很耐心。我强烈推荐 Maple CELPIP 给所有需要通过考试的人。”',
+      image: `${import.meta.env.BASE_URL}images/testimonial3.jpg`,
     },
   ]
 
