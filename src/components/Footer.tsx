@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer: React.FC = () => {
   return (
@@ -32,24 +33,24 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">快速链接</h3>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="/" className="hover:underline">
+                <Link to="/" className="hover:underline">
                   主页
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
+                <Link to="/about" className="hover:underline">
                   关于我们
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/why-choose-us" className="hover:underline">
+                <Link to="/why-choose-us" className="hover:underline">
                   为什么选择我们
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:underline">
+                <Link to="/contact" className="hover:underline">
                   联系我们
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
