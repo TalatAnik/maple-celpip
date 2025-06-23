@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import WhyChooseUsPage from './pages/WhyChooseUs'
+import ScrollToTop from './components/ScrollToTop'
 
 function About() {
   return (
@@ -14,8 +16,6 @@ function About() {
     </main>
   )
 }
-
-
 
 function Contact() {
   return (
@@ -32,10 +32,12 @@ function App() {
   return (
     <div data-theme="maple-theme" className="min-h-screen flex flex-col">
       <Router basename="/maple-celpip/">
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

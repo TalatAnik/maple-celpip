@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from '../components/Slider'
 import WhatWeOffer from '../components/WhatWeOffer'
-import WhyChooseUs from '../components/WhyChooseUs'
+import WhyChooseUs from '../components/Choose'
 import Testimonials from '../components/Testimonials'
 
 // Define image paths using import.meta.env.BASE_URL

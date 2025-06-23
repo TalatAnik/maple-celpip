@@ -6,9 +6,9 @@ const Footer: React.FC = () => {
     <footer className="bg-[var(--color-primary)] text-white py-10">
       <div className="max-w-screen-lg mx-auto px-6">
         {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           {/* Left Section */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left w-full md:w-auto">
             <h3 className="text-xl font-bold mb-4">联系我们</h3>
             <p className="text-sm mb-2">地址: 多伦多, 加拿大</p>
             <p className="text-sm mb-2">电话: +1 123-456-7890</p>
@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* QR Code Section */}
-          <div className="text-center">
+          <div className="text-center w-full md:w-auto">
             <h3 className="text-xl font-bold mb-4">关注我们的微信</h3>
-            <div className="bg-white p-4 rounded">
+            <div className="bg-white p-4 rounded inline-block">
               <img
                 src="https://via.placeholder.com/128" // Placeholder QR code
                 alt="WeChat QR Code"
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="text-center md:text-right">
+          <div className="text-center md:text-right w-full md:w-auto">
             <h3 className="text-xl font-bold mb-4">快速链接</h3>
             <ul className="text-sm space-y-2">
               <li>
