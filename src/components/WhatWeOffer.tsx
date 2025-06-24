@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaChalkboardTeacher, FaUserGraduate, FaBook } from 'react-icons/fa'
 
 const WhatWeOffer: React.FC = () => {

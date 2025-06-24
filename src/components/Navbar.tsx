@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 const menuItems = [
   { to: '/', label: '主页' },
-  { to: '/about', label: '我们的团队' },
+  { to: '/about', label: '关于我们' }, // Make sure this points to /about
+  { to: '/team', label: '团队介绍' },
   { to: '/why-choose-us', label: '为什么选择我们' },
   { to: '/contact', label: '联系我们' },
 ]
